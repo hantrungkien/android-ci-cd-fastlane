@@ -1,5 +1,5 @@
 
-FROM ubuntu:20.04
+FROM hantrungkien/android-ci-sdk-ndk:latest
 MAINTAINER KienHT<kienhantrung@gmai.com>
 
 RUN apt-get update && \
