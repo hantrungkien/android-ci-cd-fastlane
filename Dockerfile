@@ -7,7 +7,11 @@ apt-get install --no-install-recommends -y --allow-unauthenticated build-essenti
 
 RUN gem install fastlane
 RUN gem install bundler
-RUN gem install fastlane-plugin-firebase_app_distribution fastlane-plugin-telegram fastlane-plugin-slack_upload fastlane-plugin-google_drive fastlane-plugin-gmail
+RUN gem install fastlane-plugin-firebase_app_distribution
+RUN gem install fastlane-plugin-telegram
+RUN gem install fastlane-plugin-slack_upload
+RUN gem install fastlane-plugin-gmail
+RUN gem install fastlane-plugin-google_drive
 
 RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
 apt-get autoremove -y && \
