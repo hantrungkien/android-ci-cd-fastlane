@@ -1,5 +1,5 @@
 
-FROM hantrungkien/android-ci-sdk-ndk:latest
+FROM hantrungkien/android-ci:latest
 MAINTAINER KienHT<kienhantrung@gmai.com>
 
 RUN apt-get update \
