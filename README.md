@@ -9,7 +9,7 @@
 *.gitlab-ci.yml*
 
 ```yml
-image: hantrungkien/android-ci-cd-fastlane:latest
+image: hantrungkien/android-ci-cd-fastlane:ndk
 
 cache:
   key: ${CI_PROJECT_ID}
