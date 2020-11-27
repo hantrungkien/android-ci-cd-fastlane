@@ -11,13 +11,13 @@ RUN apt-get update \
 ADD Gemfile /Gemfile
 ADD Gemfile.lock /Gemfile.lock	
 
-RUN gem update --system
-RUN gem install bundler
-RUN bundle install
-RUN gem install fastlane
-RUN gem install fastlane-plugin-firebase_app_distribution
-RUN gem install fastlane-plugin-telegram
-RUN gem install fastlane-plugin-slack_upload
-RUN gem install fastlane-plugin-gmail
-RUN gem install fastlane-plugin-google_drive
-RUN gem install fastlane-plugin-dropbox
+RUN gem update --system \
+&& gem install bundler \
+&& bundle install \
+&& gem install fastlane \
+&& gem install fastlane-plugin-firebase_app_distribution \
+&& gem install fastlane-plugin-telegram \
+&& gem install fastlane-plugin-slack_upload \
+&& gem install fastlane-plugin-gmail \
+&& gem install fastlane-plugin-google_drive \
+&& gem install fastlane-plugin-dropbox
