@@ -8,6 +8,9 @@ RUN apt-get update \
 	&& apt-get autoremove -y \
 	&& apt-get clean
 
+ADD Gemfile /Gemfile
+ADD Gemfile.lock /Gemfile.lock	
+
 RUN gem update --system
 RUN gem install bundler
 RUN bundle install
